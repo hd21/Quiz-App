@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz on the CW's Crazy Ex-Girlfriend</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+	<h1 class="text-center">The Crazy Ex-Girlfriend Quiz</h1>	
+</header>
+
+
+<div class="content">
+		
+<!-- Start Page -->
+	<div id="intro">
+		<img src="https://i.blogs.es/75d3d3/crazyex/original.jpg">
+		<h2 class="text-center">Are you a fan of the CW's TV series <i>Crazy Ex-Girlfriend</i>? Do you think you know everything about CXG? Then let's put your knowledge to the test!</h2>
+		<button class="start-button btn-style" type="button">Start Quiz</button>
+	</div>
+
+
+<!--Question Page-->
+
+	<form id="quiz" class="hidden">
+		<div class="quiz-container">
+			<h3 id="question" class="text-center"></h3>
+			<ul id="answers">
+				<input type="radio" class="choice" value="0">
+				<br>
+				<input type="radio" class="choice" value="1">
+				<br>
+				<input type="radio" class="choice" value="2">
+				<br>
+				<input type="radio" class="choice" value="3">
+				<br>
+				<input type="radio" class="choice" value="4">
+				<br>
+			</ul>
+			<button id="submit-answer" type="button" class="btn-style">Submit Answer</button>
+		</div>
+		<div class="question-number"><h4></h4></div>
+	</form>
+
+<!-- Correct Response Page -->
+	<div id="correct-response" class="text-center hidden">
+		<h2>That is correct!</h2>
+		<img src="http://static.tumblr.com/4d743ceb24fbad17439ac09ac9fd56bf/oh15zg2/Xywohoilg/tumblr_static_8e32gvzi89c8gscwgcgw8g8k0.gif" class="gif">
+		<h3>Look at you go!</h3>
+		<button class="start-button btn-style" type="button" id="correct-continue">Continue</button>
+	</div>
+
+<!-- Incorrect Response Page -->
+	<div id="incorrect-response" class="text-center hidden">
+		<h2>Noooope - wrong!</h2>
+		<img src="https://media.giphy.com/media/j4rR15yChhjsA/giphy.gif" class="gif">
+		<h3>Sorry that didn't work out..</h3>
+		<button class="start-button btn-style" type="button" id="incorrect-continue">Continue</button>
+
+	</div>
+
+<!--Final Page-->
+	<div id="final" class="text-center hidden">
+		<h2>You have completed the quiz!</h2>
+		<img src="https://az616578.vo.msecnd.net/files/2016/11/11/636145035110216150873305922_crazy-ex-girlfriend-gif.gif" class="gif">
+		<h3 id="results" class="text-center"></h3>
+		<button class="start-over-btn btn-style" type="button">Restart</button>
+	</div>
+
+</div>
+
+ <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
